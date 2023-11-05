@@ -5,7 +5,7 @@ import vgamepad as vg
 # initialization stuff
 pygame.init()
 pygame.joystick.init()
-joystick = pygame.joystick.Joystick(1)
+joystick = pygame.joystick.Joystick(0)
 gamepad = vg.VX360Gamepad()
 
 # key binds for virtual joystick
