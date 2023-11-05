@@ -45,6 +45,6 @@ while True:
                     if gear > prev_gear:
                         shift(up, (gear - prev_gear))
                     elif gear < prev_gear:
-                        shift(down, prev_gear - gear)
-                    print(f"{gear} gear engaged.")
+                        shift(down, (prev_gear - gear))
+                    print(f"Gear {gear} engaged.")
                     prev_gear = gear
