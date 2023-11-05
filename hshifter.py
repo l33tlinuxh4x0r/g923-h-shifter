@@ -40,8 +40,8 @@ while True:
         if event.type == pygame.JOYBUTTONDOWN:
             for gear in gears:
                 if joystick.get_button(gears[gear]) and joystick.get_axis(3) < 0.75:
-                    print(f"gear {gear} was selected.")
-                    print(f"previous gear was {prev_gear}")
+                    print(f"Gear {gear} was selected.")
+                    print(f"Previous gear was {prev_gear}")
                     if gear > prev_gear:
                         shift(up, (gear - prev_gear))
                     elif gear < prev_gear:
